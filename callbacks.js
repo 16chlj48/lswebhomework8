@@ -25,7 +25,7 @@ firstItem(foods, (firstItem) => {
   console.log('The first item is ' + firstItem);
 });
 
-function firstItem = (myArr, cb){
+function firstItem(myArr, cb){
   cb(myArr[0]);
 };
 
@@ -36,7 +36,7 @@ getLength(foods, (length) => {
   console.log('The length of the array is ' + length);
 });
 
-function getLength = (myArr, cb){
+function getLength(myArr, cb){
 	cb(myArr.length);
 };
 
@@ -46,7 +46,7 @@ last(foods, (lastItem) => {
   console.log('The last item in the array is ' + lastItem);
 });
 
-function last = (myArr, cb){
+function last(myArr, cb){
 	cb(myArr[myArr.length -1]);
 };
 
@@ -56,7 +56,7 @@ sumNums(5, 10, (sum) => {
   console.log('The sum is ' + sum);
 });
 
-function sumNums = (n1, n2, cb){
+function sumNums(n1, n2, cb){
 	cb(n1 + n2);
 };
 
@@ -66,7 +66,7 @@ multiplyNums(5, 10, (product) => {
   console.log('The product is ' + product);
 });
 
-function multiplyNums = (n1, n2, cb){
+function multiplyNums(n1, n2, cb){
 	cb(n1 * n2);
 }
 
@@ -77,7 +77,7 @@ contains(foods, 'ribeye', (result) => {
   console.log(result ? 'ribeye is in the array' : 'ribeye is not in the array');
 });
 
-function contains = (myArr, item, cb){
+function contains(myArr, item, cb){
 	var check = false;
 	for(var i = 0; i < myArr.length; i++){
 		if(myArr[i] === item){
@@ -94,7 +94,7 @@ removeDuplicates(foods, (uniqueFoods) => {
   console.log('foods with duplicates removed: ' + uniqueFoods);
 });
 
-function removeDuplicates = (myArr, cb){
+function removeDuplicates(myArr, cb){
 
 //indexOf returns the index of the first occurrence of searchElement in the array, 
 //or -1 if searchElement is not found.
@@ -116,7 +116,7 @@ forEach(foods, (value, index) => {
   console.log('${value} is at index ' + index);
 });
 
-function forEach = (){
+function forEach(myArr, cb){
 	for(var i = 0; i< myArr.length; i++){
 		var val = myArr[i];
 		var index = i;
