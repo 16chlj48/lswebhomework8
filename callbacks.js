@@ -127,7 +127,7 @@ function forEach = (){
 
 /*
 
-indexOf EXAMPLES
+indexOf EXAMPLES:
 
 // Create an array. (The elements start at index 0.)  
 var ar = ["ab", "cd", "ef", "ab", "cd"];  
