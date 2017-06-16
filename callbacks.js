@@ -20,6 +20,7 @@
 
 
 var foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
+console.log('The foods list: ' + foods);
 
 firstItem(foods, (firstItem) => {
   console.log('The first item is ' + firstItem);
@@ -113,7 +114,7 @@ var selectFoods = [];
 // Write a function called forEach that iterates over the provided array and passes the value and index into the callback.
 
 forEach(foods, (value, index) => {
-  console.log('${value} is at index ' + index);
+  console.log(`${value} is at index ` + index);
 });
 
 function forEach(myArr, cb){
